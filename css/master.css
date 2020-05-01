@@ -8,31 +8,15 @@ html {
 
 
 /* ==== MAIN LAYOUT & HEADER ==== */
-body {
-  margin: 0;
-}
 main {
   background-color: darkslategrey;
 }
-/* header h1 {
-  margin: 0;
-  padding-top: 50px;
-  color: #fcf7f8;
-  font-family: 'Vidaloka', serif;
-  font-size: 70px;
-  text-align: center;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
-header h2 {
-  margin: 0;
-  padding-left: 140px;
-  color: rgba(252, 252, 238, 0.5);
-  font-family: 'Vidaloka', serif;
-  font-size: 17px;
-  font-weight: lighter;
-  text-align: center;
-  line-height: 0.5;
-} */
-
 header h1 {
   margin: 0;
   padding-top: 50px;
@@ -52,38 +36,38 @@ header h2 {
 
 
 /* ==== SPLASH & PARALLAX ==== */
-header {
+body {
+  margin: 0;
   background: url('../imgs/header-splash2.png');
   background-color: #1b263b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 500px;
 }
-#parallax1 {
+#spacer {
+  height: 300px;
+}
+#img1 {
   background: url('../imgs/DSC02980.jpg');
 }
-#parallax2 {
+#img2 {
   background: url('../imgs/DSC02197.jpg');
 }
-#parallax3 {
+#img3 {
   background: url('../imgs/DSC03342.jpg');
 }
-header, #parallax1, #parallax2, #parallax3 {
+body, #img1, #img2, #img3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-height {
-  height: 600px;
+.parallax {
+  height: 500px;
 }
 
 
 
 /* ==== NAVIGATION ==== */
 nav#menu {
-  background-color: #a2b0c4;
+  /* background-color: #a2b0c4; */
   position: sticky;
   top: 0;
   z-index: 10;
