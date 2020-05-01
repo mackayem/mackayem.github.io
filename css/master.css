@@ -14,7 +14,7 @@ body {
 main {
   background-color: darkslategrey;
 }
-header h1 {
+/* header h1 {
   margin: 0;
   padding-top: 50px;
   color: #fcf7f8;
@@ -31,6 +31,23 @@ header h2 {
   font-weight: lighter;
   text-align: center;
   line-height: 0.5;
+} */
+
+header h1 {
+  margin: 0;
+  padding-top: 50px;
+  color: #fcf7f8;
+  font-family: 'Vidaloka', serif;
+  font-size: 70px;
+}
+header h2 {
+  margin: 0;
+  padding-left: 140px;
+  color: rgba(252, 252, 238, 0.5);
+  font-family: 'Vidaloka', serif;
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 0.5;
 }
 
 
@@ -38,6 +55,10 @@ header h2 {
 header {
   background: url('../imgs/header-splash2.png');
   background-color: #1b263b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
 }
 #parallax1 {
   background: url('../imgs/DSC02980.jpg');
@@ -53,7 +74,9 @@ header, #parallax1, #parallax2, #parallax3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+}
+.parallax-height {
+  height: 600px;
 }
 
 
@@ -61,10 +84,9 @@ header, #parallax1, #parallax2, #parallax3 {
 /* ==== NAVIGATION ==== */
 nav#menu {
   background-color: #a2b0c4;
-  margin: 30px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 #menu ul {
   margin: 0;
