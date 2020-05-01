@@ -1,0 +1,51 @@
+#menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#menu ul {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+}
+#menu ul li {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 6px;
+}
+#menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 1.2rem;
+  transition-timing-function: ease;
+  transition: all 0.1s;
+  transition-property: color, font-weight;
+}
+/* adds a semi-transparent background for the menu links. */
+#menu ul li a:link, a:visited {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 10px 10px 10px;
+  transition-timing-function: ease;
+  transition: all 0.5s;
+  transition-property: background-color, color, font-weight;
+}
+/* CSS transition background colour when hovering on the menu links. */
+#menu ul li a:hover {
+  color: #ffffff;
+  font-weight: normal;
+  background-color: rgba(45, 61, 86, 1.0);
+}
+#menu ul li a:active {
+  color: #2d3d56;
+  font-weight: bold;
+  cursor: pointer;
+}

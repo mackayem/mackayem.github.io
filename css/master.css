@@ -1,0 +1,129 @@
+/* ==== GLOBAL STYLES ==== */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* ==== MAIN LAYOUT & HEADER ==== */
+body {
+  margin: 0;
+}
+main {
+  background-color: darkslategrey;
+}
+header h1 {
+  margin: 0;
+  padding-top: 50px;
+  color: #fcf7f8;
+  font-family: 'Vidaloka', serif;
+  font-size: 70px;
+  text-align: center;
+}
+header h2 {
+  margin: 0;
+  padding-left: 140px;
+  color: rgba(252, 252, 238, 0.5);
+  font-family: 'Vidaloka', serif;
+  font-size: 17px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 0.5;
+}
+
+
+/* ==== SPLASH & PARALLAX ==== */
+header {
+  background: url('../imgs/header-splash2.png');
+  background-color: #1b263b;
+}
+#parallax1 {
+  background: url('../imgs/DSC02980.jpg');
+}
+#parallax2 {
+  background: url('../imgs/DSC02197.jpg');
+}
+#parallax3 {
+  background: url('../imgs/DSC03342.jpg');
+}
+header, #parallax1, #parallax2, #parallax3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+
+
+/* ==== NAVIGATION ==== */
+nav#menu {
+  margin: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#menu ul {
+  margin: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+}
+#menu ul li {
+  margin: 10px; /*between each button*/
+  list-style-type: none;
+  text-align: center;
+}
+#menu ul li a {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+#menu ul li a:link, a:visited {
+  padding: 10px; /*size of button*/
+  background-color: rgba(255, 255, 255, 0.2);
+  transition-timing-function: ease;
+  transition: all 0.5s;
+  transition-property: background-color;
+}
+#menu ul li a:hover {
+  background-color: rgba(45, 61, 86, 1.0);
+}
+#menu ul li a:active {
+}
+.add-colour-bg {
+  background-color: #a2b0c4;
+}
+.remove-colour-bg {
+  transition: .5s linear;
+}
+
+
+/* ==== SECTION CONTENT STYLES ==== */
+h3 {
+  font-family: 'Vidaloka', serif;
+  margin: 0;
+}
+section.about {
+  background-color: #c4bbb8;
+}
+section.portfolio {
+  background-color: #4c2b36;
+}
+section.education {
+  background-color: #415a77;
+}
+section.contact {
+  background-color: #4c2b36;
+}
+
+/* @media only screen and (min-width: 900px) {
+} */
+
+/* @import url("mobile.css") screen and (max-width: 500px); */
+/* @import url("mobile.css") screen and (min-width: 300px); */
