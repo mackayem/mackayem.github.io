@@ -7,21 +7,35 @@
     <title>Emily Mackay | Portfolio</title>
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Vidaloka&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="animatesections.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 470) {
+          $("nav").removeClass("remove-colour-bg").addClass("add-colour-bg");
+        }
+        else {
+          $("nav").removeClass("add-colour-bg").addClass("remove-colour-bg");
+        }
+      });
+    });
+    </script>
   </head>
 
 
     <!-- *********  Header  ********* -->
   <header>
     <h1>Emily Mackay</h1>
-    <h2>A.Sci: Computer Science</h2>
+    <h2>A.Sci. Computer Science</h2>
   </header>
     <!-- *********  Navigation Bar  ********* -->
   <nav id="menu">
     <ul>
-      <li><a href="#">about</a></li>
-      <li><a href="#">portfolio</a></li>
-      <li><a href="#">education</a></li>
-      <li><a href="#">contact</a></li>
+      <li><a href="#about-section">about</a></li>
+      <li><a href="#portfolio-section">portfolio</a></li>
+      <li><a href="#education-section">education</a></li>
+      <li><a href="#contact-section">contact</a></li>
     </ul>
   </nav>
   <div id="spacer"></div>
@@ -29,41 +43,63 @@
 
 <body>
   <!-- ===== MAIN CONTENT ===== -->
-  <main id="main-content-wrapper">
+  <main>
     <!-- *********  About  ********* -->
-    <section class="about">
-      <h3>About Me</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <section id="about-section" class="content">
+      <div class="content-wrapper">
+        <h3>Background Story</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>-history in dental industry</p>
+        <p>-long-time interest in web dev--started designing websites in grade 6!</p>
+        <p>-hobbies</p>
+        <p>-contact</p>
+      </div>
       <div id="img1" class="parallax"></div>
     </section>
 
 
       <!-- *********  PORTFOLIO & PROJECTS  ********* -->
-      <section class="portfolio">
-        <h3>Portfolio & Projects</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section id="portfolio-section" class="content">
+        <div class="content-wrapper">
+          <h3>Portfolio & Projects</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>-this website</p>
+          <p>-powers of 2 game</p>
+          <p>-sql project</p>
+        </div>
         <div id="img2" class="parallax"></div>
       </section>
 
 
       <!-- *********  EDUCATION & COURSES  ********* -->
-      <section class="education">
-        <h3>Education & Courses</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section id="education-section" class="content">
+        <div class="content-wrapper">
+          <h3>Education & Courses</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>-langara</p>
+          <p>-3 sections: college, online supplementary learning, workshops & bootcamps</p>
+          <p>-linkedin courses</p>
+          <p>-currently working on</p>
+        </div>
         <div id="img3" class="parallax"></div>
       </section>
 
 
       <!-- *********  CONTACT INFO & SOCIAL MEDIA  ********* -->
       <footer>
-        <section class="contact">
-          <h3>Contact & Social Media</h3>
-          <a href="linkedin.com">LinkedIn</a>
-          <a href="github.com">GitHub</a>
+        <section id="contact-section">
+          <div id="links" class="footer-wrapper">
+            <a href="linkedin.com">LinkedIn</a>
+            <a href="github.com">GitHub</a>
+            <a href="github.com">Email</a>
+          </div>
+          <div id="sources" class="footer-wrapper">
+            <p>Website by Emily Mackay &nbsp; &nbsp; &nbsp; <a href="">Sources</a></p>
+          </div>
         </section>
       </footer>
 
