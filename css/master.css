@@ -1,10 +1,13 @@
-/* COLOR PALETTE
-#fcf7f8;
-#F3EDE9
-#1b263b; deep navy blue
-#1d2d44; deep navy blue #2
-
+/* COLOR PALETTE https://coolors.co/9c6b65-fcf7f8-f3ede9-b1a6ac-4c2b36-563841-3a1b21-1b263b
+#FCF7F8; snow-white     for header/nav
+#F3EDE9; isabelline     for text
+#1B263B; oxford         for nav bar + footer bg
+#9C6B65; copper-rose    for links
+#563841; deeptaupe      content bg
+#4C2B36; eggplant       content bg
+#3A1B21; liver          content bg
 */
+
 
 
 /* ==== GLOBAL STYLES ==== */
@@ -26,7 +29,7 @@ header {
 header h1 {
   margin: 0;
   padding-top: 50px;
-  color: #fcf7f8;
+  color: #FCF7F8;
   font-family: 'Vidaloka', serif;
   font-size: 70px;
 }
@@ -45,7 +48,7 @@ header h2 {
 body {
   margin: 0;
   background: url('../imgs/splash0.png');
-  background-color: #1b263b;
+  background-color: #1B263B;
 }
 #spacer {
   height: 400px;
@@ -59,7 +62,10 @@ body {
 #img3 {
   background: url('../imgs/splash2.png');
 }
-body, #img1, #img2, #img3 {
+#img4 {
+  background: url('../imgs/splash1.png');
+}
+body, #img1, #img2, #img3, #img4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,9 +97,10 @@ nav {
   text-align: center;
 }
 #menu ul li a {
-  color: #ffffff;
+  color: #FCF7F8;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
+  font-weight: bold;
   text-decoration: none;
 }
 #menu ul li a:link, a:visited {
@@ -108,9 +115,7 @@ nav {
 }
 .add-colour-bg {
   transition: .2s linear;
-  /* background-color: #a2b0c4; */
-  /* background-color: #534d56; */
-  background-color: #1d2d44;
+  background-color: #1B263B;
 }
 .remove-colour-bg {
   transition: .5s linear;
@@ -123,7 +128,7 @@ h3 {
   font-family: 'Vidaloka', serif;
   font-size: 30px;
 }
-.content, #sources {
+.content, #credit-line, #sources {
   font-family: 'Montserrat', sans-serif;
   color: #F3EDE9;
 }
@@ -133,38 +138,54 @@ h3 {
   padding: 30px 0px 30px 0px;
 }
 section#about-section {
-  background-color: #4C2B36;
+  background-color: #3A1B21;
 }
 section#portfolio-section {
-  background-color: #655560;
+  background-color: #563841;
 }
 section#education-section {
-  background-color: #896A67;
+  background-color: #4C2B36;
 }
 section#contact-section {
-  background-color: #1d2d44;
+  background-color: #1B263B;
 }
+
+
+/* ==== FOOTER STYLES ==== */
 .footer-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main a:link, a:visited {
+main a:link, a:visited, button#toggle-sources {
   text-decoration: none;
-  font-weight: bolder;
-  color: #EBB3A9;
-  /* color: #cc978e; */
+  font-weight: bold;
+  color: #9C6B65;
   font-family: 'Raleway', sans-serif;
 }
 #links a:link, a:visited {
-  padding: 30px 20px 10px 20px;
-  font-size: 1.2rem;
+  padding: 30px 30px 10px 30px;
+  font-size: 1.5rem;
 }
-#sources a:link, a:visited {
+#credit-line a:link, a:visited, #credit-line p {
   padding: 0px;
   font-size: 0.8rem;
 }
+button#toggle-sources {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.0);
+}
 #sources {
+  display: none;
+  width: 700px;
+  margin: 0 auto;
+}
+#sources h4 {
+  margin: 0;
+}
+#sources ul li {
   font-size: 0.8rem;
 }
 

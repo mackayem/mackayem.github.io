@@ -6,21 +6,10 @@
     <!-- <meta name="description" content=""> -->
     <title>Emily Mackay | Portfolio</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="icomoon/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Vidaloka&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="animatesections.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(document).scrollTop() > 470) {
-          $("nav").removeClass("remove-colour-bg").addClass("add-colour-bg");
-        }
-        else {
-          $("nav").removeClass("add-colour-bg").addClass("remove-colour-bg");
-        }
-      });
-    });
-    </script>
+    <script src="js\scripts.js"></script>
   </head>
 
 
@@ -93,15 +82,26 @@
       <footer>
         <section id="contact-section">
           <div id="links" class="footer-wrapper">
-            <a href="linkedin.com">LinkedIn</a>
-            <a href="github.com">GitHub</a>
-            <a href="github.com">Email</a>
+            <a href="https://www.linkedin.com/in/mackaye" target="_blank"></a>
+            <a href="https://github.com/emmackay" target="_blank"></a>
+            <a href="https://stackoverflow.com/users/10688425/emilym?tab=profile" target="_blank"></a>
+            <!-- <a href="">Email</a> -->
           </div>
-          <div id="sources" class="footer-wrapper">
-            <p>Website by Emily Mackay &nbsp; &nbsp; &nbsp; <a href="">Sources</a></p>
+          <div id="sources" class="sources">
+            <h4>Source Credit</h4>
+            <ul>
+              <li>Photographs and code by Emily Mackay</li>
+              <li>Fonts by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+              <li>Icons by <a href="https://icomoon.io/" target="_blank">IcoMoon</a> &nbsp; / &nbsp; LinkedIn logo copyright to LinkedIn Corp &nbsp; / &nbsp; GitHub logo copyright to GitHub Inc.</li>
+            </ul>
+          </div>
+          <div id="credit-line" class="footer-wrapper">
+            <p>Website by Emily Mackay &nbsp; &nbsp; &nbsp; <button id="toggle-sources">Sources</button></p>
           </div>
         </section>
       </footer>
+
+      <!-- <div id="img4" class="parallax"></div> -->
 
     </main>
   </body>
