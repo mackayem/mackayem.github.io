@@ -111,7 +111,7 @@ nav {
   transition-property: background-color;
 }
 #menu ul li a:hover {
-  background-color: rgba(45, 61, 86, 1.0);
+  background-color: #1B263B;
 }
 .add-colour-bg {
   transition: .2s linear;
