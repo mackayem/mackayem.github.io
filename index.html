@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="description" content=""> -->
-    <title>Emily Mackay | Portfolio</title>
+    <title>Emily Mackay</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="icomoon/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Vidaloka&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js\scripts.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
 
 
@@ -35,15 +35,13 @@
   <main>
     <!-- *********  About  ********* -->
     <section id="about-section" class="content">
-      <div class="content-wrapper">
-        <h3>Background Story</h3>
-
-
-
-        <p>-history in dental industry</p>
-        <p>-long-time interest in web dev--started designing websites in grade 6!</p>
-        <p>-hobbies</p>
-        <p>-contact</p>
+      <div class="content-wrapper" id="about_wrapper">
+        <h3>Introduction</h3>
+        <figure><img src="imgs/about-headshot.png" alt="A headshot of a girl smiling"></figure>
+        <p>Hi there! My name is Emily Mackay.</p>
+        <p>My love of the field of computer science began as a child, when I built my first website at the age of 12. As an adult I spent seven years working in the dental industry before re-visiting an old passion and enrolling in college to study programming. Now, I am soon-to-be-graduated with an Associate Degree of Science majoring in Computer Science from Langara College.</p>
+        <p>I have experience in full-stack web development, database design, and software design. My full list of skills can be viewed in my Portfolio and Education sections below.</p>
+        <p>Outside of school, I enjoy visiting the backcountry by foot or on skis, as well as attending shows and supporting local and international musical talent.</p>
       </div>
       <div id="img1" class="parallax"></div>
     </section>
@@ -51,13 +49,17 @@
 
       <!-- *********  PORTFOLIO & PROJECTS  ********* -->
       <section id="portfolio-section" class="content">
-        <div class="content-wrapper">
+        <div class="content-wrapper" id="portfolio_wrapper">
           <h3>Portfolio & Projects</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>-this website</p>
-          <p>-powers of 2 game</p>
-          <p>-sql project</p>
+          <img src="imgs/portfolio-thumb1-bw.png">
+          <h4>Personal Website</h4>
+          <p>I built this website styled in a simple vertical parallax website, which allowed me to have a similar style on both mobile and desktop layouts. I added a little functionality using jQuery to style my sticky navigation bar and to allow quick-scrolling to sections. Feel free to evaluate my source code!</p>
+          <img src="imgs/portfolio-thumb2-bw.png">
+          <h4>JavaScript Game: "Powers of Two"</h4>
+          <p>This game was a final project for a Web Programming course taken at Langara College. It is designed in native JavaScript. I plan to add a shuffle function in the future to increase the playability.</p>
+          <img src="imgs/portfolio-thumb3-bw.png">
+          <h4>DBMS Project</h4>
+          <p>A final project for a Database Systems course taken at Langara College. This project was completed as part of a team of two to design, code and write queries using DBMS principles for a hypothetical paid parking lot system.</p>
         </div>
         <div id="img2" class="parallax"></div>
       </section>
@@ -65,8 +67,12 @@
 
       <!-- *********  EDUCATION & COURSES  ********* -->
       <section id="education-section" class="content">
-        <div class="content-wrapper">
+        <div class="content-wrapper" id="education_wrapper">
           <h3>Education & Courses</h3>
+          <h4>College & University</h4> <!-- ******** Sub-Heading ******** -->
+            <ul>
+              <li>Langara College, Associate Degree of Science in Computer Science, 2017-2020</li>
+            </ul>
            <h4>Languages</h4> <!-- ******** Sub-Heading ******** -->
             <ul>
               <li>HTML5 / CSS</li>
@@ -75,10 +81,6 @@
               <li>Java</li>
               <li>C++</li>
               <li>SQL</li>
-            </ul>
-          <h4>College & University</h4> <!-- ******** Sub-Heading ******** -->
-            <ul>
-              <li>Langara College, Associate Degree of Science in Computer Science, 2017-2020</li>
             </ul>
           <h4>Online Supplementary Courses</h4> <!-- ******** Sub-Heading ******** -->
             <ul>
@@ -91,11 +93,9 @@
             <ul>
               <li><a href="https://www.canadalearningcode.ca/">Canada Learning Code</a>: Intro to User Experience, September 2019</li>
             </ul>
-          <h4>Currently Learning</h4> <!-- ******** Sub-Heading ******** -->
+          <h4>Software</h4> <!-- ******** Sub-Heading ******** -->
             <ul>
-              <li>React.js via LinkedIn Learning, May 2020</li>
-              <li>Brushing up on C++, slotted for mid-May 2020</li>
-              <li>User Experience Designer via LinkedIn Learning, slotted for June 2020</li>
+              <li>qGIS</li>
             </ul>
         </div>
         <div id="img3" class="parallax"></div>
@@ -105,7 +105,7 @@
       <!-- *********  CONTACT INFO & SOCIAL MEDIA  ********* -->
       <footer>
         <section id="contact-section">
-          <div id="links" class="footer-wrapper">
+          <div class="footer-wrapper" id="links">
             <a href="https://www.linkedin.com/in/mackaye" target="_blank"></a>
             <a href="https://github.com/emmackay" target="_blank"></a>
             <a href="https://stackoverflow.com/users/10688425/emilym?tab=profile" target="_blank"></a>

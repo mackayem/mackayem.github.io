@@ -17,6 +17,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+figure {
+  margin: 0;
+}
 
 
 /* ==== MAIN LAYOUT & HEADER ==== */
@@ -29,7 +32,7 @@ header {
 header h1 {
   margin: 0;
   padding-top: 50px;
-  color: #FCF7F8;
+  color: #F3EDE9;
   font-family: 'Vidaloka', serif;
   font-size: 70px;
 }
@@ -126,26 +129,34 @@ nav {
 h3 {
   margin: 0;
   font-family: 'Vidaloka', serif;
-  font-size: 30px;
+  color: #F3EDE9;
+  font-size: 40px;
 }
 .content, #credit-line, #sources {
   font-family: 'Montserrat', sans-serif;
-  color: #F3EDE9;
+  color: #B1A6AC;
 }
 .content-wrapper {
   width: 900px;
   margin: 0 auto;
-  padding: 30px 0px 30px 0px;
+  padding: 50px 0px 50px 0px;
 }
-section#about-section {
+section#about-section, section#portfolio-section, section#education-section {
   background-color: #3A1B21;
 }
-section#portfolio-section {
+#about-section img {
+  padding: 20px 0px 20px 0px;
+  border-radius: 50%;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+/* section#portfolio-section {
   background-color: #563841;
 }
 section#education-section {
   background-color: #4C2B36;
-}
+} */
 section#contact-section {
   background-color: #1B263B;
 }
@@ -164,7 +175,8 @@ main a:link, a:visited, button#toggle-sources {
   font-family: 'Raleway', sans-serif;
 }
 #links a:link, a:visited {
-  padding: 30px 30px 10px 30px;
+  margin: 30px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
   font-size: 1.5rem;
 }
 #credit-line a:link, a:visited, #credit-line p {
