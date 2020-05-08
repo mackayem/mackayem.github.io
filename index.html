@@ -35,39 +35,58 @@
   <main>
     <!-- *********  About  ********* -->
     <section id="about-section" class="content">
-      <div class="content-wrapper" id="about_wrapper">
-        <h3>Introduction</h3>
+      <div id="about-wrapper" class="content_wrapper">
         <figure><img src="imgs/about-headshot.png" alt="A headshot of a girl smiling"></figure>
+        <div id="about-text">
+        <h3>Introduction</h3>
         <p>Hi there! My name is Emily Mackay.</p>
-        <p>My love of the field of computer science began as a child, when I built my first website at the age of 12. As an adult I spent seven years working in the dental industry before re-visiting an old passion and enrolling in college to study programming. Now, I am soon-to-be-graduated with an Associate Degree of Science majoring in Computer Science from Langara College.</p>
-        <p>I have experience in full-stack web development, database design, and software design. My full list of skills can be viewed in my Portfolio and Education sections below.</p>
-        <p>Outside of school, I enjoy visiting the backcountry by foot or on skis, as well as attending shows and supporting local and international musical talent.</p>
+        <p>My love of programming began as a child, when I built my first website at the age of 12. As an adult I spent seven years working in the dental industry before re-visiting an old passion and enrolling in college to study computer science. Now, I am soon-to-be-graduated with an Associate Degree of Science majoring in Computer Science from Langara College.</p>
+        <p>Through my educational journey, I have gained experience in full-stack web development, database design, and software design, with a growing passion for front-end development and UX/UI design. My full list of skills can be viewed in my Portfolio and Education sections below.</p>
+        <p>Outside of school, I enjoy visiting BC's beautiful backcountry by foot or on skis, as well as listening to music and attending shows to support local and international talent.</p>
       </div>
-      <div id="img1" class="parallax"></div>
+      </div>
     </section>
+    <div id="img1" class="parallax"></div>
 
 
-      <!-- *********  PORTFOLIO & PROJECTS  ********* -->
-      <section id="portfolio-section" class="content">
-        <div class="content-wrapper" id="portfolio_wrapper">
-          <h3>Portfolio & Projects</h3>
-          <img src="imgs/portfolio-thumb1-bw.png">
-          <h4>Personal Website</h4>
-          <p>I built this website styled in a simple vertical parallax website, which allowed me to have a similar style on both mobile and desktop layouts. I added a little functionality using jQuery to style my sticky navigation bar and to allow quick-scrolling to sections. Feel free to evaluate my source code!</p>
-          <img src="imgs/portfolio-thumb2-bw.png">
-          <h4>JavaScript Game: "Powers of Two"</h4>
-          <p>This game was a final project for a Web Programming course taken at Langara College. It is designed in native JavaScript. I plan to add a shuffle function in the future to increase the playability.</p>
-          <img src="imgs/portfolio-thumb3-bw.png">
-          <h4>DBMS Project</h4>
-          <p>A final project for a Database Systems course taken at Langara College. This project was completed as part of a team of two to design, code and write queries using DBMS principles for a hypothetical paid parking lot system.</p>
-        </div>
-        <div id="img2" class="parallax"></div>
-      </section>
+
+    <!-- *********  Portfolio  ********* -->
+    <section id="portfolio-section" class="content">
+      <div id="portfolio-wrapper" class="content_wrapper">
+        <h3>Portfolio & Projects</h3>
+        
+        <section class="project_item">
+          <figure><img src="imgs/portfolio-thumb1-bw.png"></figure>
+          <div class="project_description">
+            <h4>Personal Website</h4>
+            <p>I built this website styled in a simple vertical parallax website, which allowed me to have a similar style on both mobile and desktop layouts. I added a little functionality using jQuery to style my sticky navigation bar and to allow quick-scrolling to sections. Feel free to evaluate my source code!</p>
+          </div>
+        </section>
+
+        <section class="project_item">
+          <figure><img src="imgs/portfolio-thumb2-bw.png"></figure>
+          <div class="project_description">
+            <h4>JavaScript Game: "Powers of Two"</h4>
+            <p>This game was a final project for a Web Programming course taken at Langara College. It is designed in native JavaScript. I plan to add a shuffle function in the future to increase the playability.</p>
+          </div>
+        </section>
+
+        <section class="project_item">
+          <figure><img src="imgs/portfolio-thumb3-bw.png"></figure>
+          <div class="project_description">
+            <h4>DBMS Project</h4>
+            <p>A final project for a Database Systems course taken at Langara College. This project was completed as part of a team of two to design, code and write queries using DBMS principles for a hypothetical paid parking lot system.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div id="img2" class="parallax"></div>
 
 
-      <!-- *********  EDUCATION & COURSES  ********* -->
-      <section id="education-section" class="content">
-        <div class="content-wrapper" id="education_wrapper">
+
+    <!-- *********  EDUCATION & COURSES  ********* -->
+    <section id="education-section" class="content">
+        <div id="education-wrapper" class="content_wrapper">
           <h3>Education & Courses</h3>
           <h4>College & University</h4> <!-- ******** Sub-Heading ******** -->
             <ul>
@@ -98,18 +117,17 @@
               <li>qGIS</li>
             </ul>
         </div>
-        <div id="img3" class="parallax"></div>
       </section>
+      <div id="img3" class="parallax"></div>
 
 
       <!-- *********  CONTACT INFO & SOCIAL MEDIA  ********* -->
       <footer>
         <section id="contact-section">
-          <div class="footer-wrapper" id="links">
+          <div id="links" class="footer-wrapper">
             <a href="https://www.linkedin.com/in/mackaye" target="_blank"></a>
             <a href="https://github.com/emmackay" target="_blank"></a>
             <a href="https://stackoverflow.com/users/10688425/emilym?tab=profile" target="_blank"></a>
-            <!-- <a href="">Email</a> -->
           </div>
           <div id="sources" class="sources">
             <h4>Source Credit</h4>
@@ -124,8 +142,6 @@
           </div>
         </section>
       </footer>
-
-      <!-- <div id="img4" class="parallax"></div> -->
 
     </main>
   </body>
