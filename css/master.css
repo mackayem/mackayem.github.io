@@ -83,11 +83,16 @@ body, #img1, #img2, #img3, #img4 {
 
 
 /* ==== NAVIGATION ==== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 #menu ul {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-  padding-left: 0;
+  padding-left: 0; */
 }
 #menu ul li {
   text-align: center;
@@ -109,6 +114,28 @@ body, #img1, #img2, #img3, #img4 {
   color: #1B263B;
   font-weight: bold;
   cursor: pointer;
+}
+.add-colour-bg {
+  transition: .2s linear;
+  background-color: #1B263B;
+}
+.remove-colour-bg {
+  transition: .5s linear;
+}
+.add-mobile-menu-nav-ul {
+  margin: 0;
+  padding: 10px;
+  background-color: #1B263B;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+}
+.remove-mobile-menu-nav-ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  padding-left: 0;
 }
 
 
