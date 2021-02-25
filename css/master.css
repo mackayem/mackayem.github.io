@@ -26,6 +26,14 @@ body, figure {
 img {
   max-width: 100%;
 }
+ul li {
+  padding-bottom: 5px;
+}
+.ul-no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 
 /* ==== MAIN LAYOUT & HEADER ==== */
@@ -128,42 +136,6 @@ nav {
 #menu ul li a:hover {
   background-color: #1B263B;
 }
-
-/* .mobile-menu-ul-add {
-  margin: 0px;
-  padding: 10px;
-  background-color: #1B263B;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, auto);
-  justify-content: center;
-  transition: .5s linear;
-} */
-
-
-/* .mobile-menu-add-colour-bg {
-  background-color: #1B263B;
-}
-.mobile-menu-remove-colour-bg {
-  transition: .5s linear;
-}
-.mobile-menu-add-nav-ul {
-  margin: 0px;
-  padding: 5px;
-  background-color: #1B263B;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, auto);
-  justify-content: center;
-}
-.mobile-menu-remove-nav-ul {
-  margin: 0px;
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-} */
-
 
 /* ==== SECTION CONTENT STYLES ==== */
 h3 {
