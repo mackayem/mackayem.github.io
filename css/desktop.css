@@ -1,5 +1,6 @@
 @media only screen and (min-width: 900px) {
   header h1 {
+    margin-top: 70px;
     font-size: 70px;
   }
   header h2 {
@@ -11,24 +12,16 @@
   }
   nav {
     position: sticky;
-    top: 0;
-    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.0);
   }
   #menu ul {
-    margin: 0px;
-    padding: 10px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, auto);
     justify-content: center;
   }
-  #menu ul li {
-    margin: 10px;
-    list-style-type: none;
-    text-align: center;
-  }
   #menu ul li a:link, a:visited {
-    padding: 10px;
+    padding: 12px;
     background-color: rgba(255, 255, 255, 0.2);
     transition-timing-function: ease;
     transition: all 0.5s;
@@ -37,13 +30,15 @@
   #menu ul li a:hover {
     background-color: #1B263B;
   }
-  .add-colour-bg {
-    transition: .2s linear;
+  .add-menu-colour {
     background-color: #1B263B;
-  }
-  .remove-colour-bg {
     transition: .5s linear;
   }
+  .no-menu-colour {
+    background-color: rgba(255, 255, 255, 0.0);
+    transition: .2s linear;
+  }
+
   #about-wrapper {
     display: grid;
     grid-template-columns: repeat(2, auto);

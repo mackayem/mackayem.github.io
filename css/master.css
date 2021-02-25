@@ -36,7 +36,7 @@ header {
   margin-bottom: 40px;
 }
 header h1 {
-  padding-top: 50px;
+  margin-top: 200px;
   color: #F3EDE9;
   font-family: 'Vidaloka', serif;
   font-size: 50px;
@@ -84,26 +84,27 @@ body, #img1, #img2, #img3, #img4 {
 
 /* ==== NAVIGATION ==== */
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1;
+  width: 100%;
+  background-color: #1B263B;
 }
 #menu ul {
   margin: 0px;
-  padding: 5px;
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto); */
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
 }
 #menu ul li {
-  /* margin: 0px; */
   padding: 10px;
+  margin: 10px;
   text-align: center;
   list-style-type: none;
 }
 #menu ul li a {
-  /* margin: 0px; */
-  /* padding: 0px; */
   text-decoration: none;
   color: #FCF7F8;
   font-family: 'Raleway', sans-serif;
@@ -118,8 +119,29 @@ nav {
   font-weight: bold;
   cursor: pointer;
 }
-.mobile-menu-add-colour-bg {
-  /* transition: .2s linear; */
+#menu ul li a:link, a:visited {
+  background-color: rgba(255, 255, 255, 0.0);
+  transition-timing-function: ease;
+  transition: all 0.5s;
+  transition-property: background-color;
+}
+#menu ul li a:hover {
+  background-color: #1B263B;
+}
+
+/* .mobile-menu-ul-add {
+  margin: 0px;
+  padding: 10px;
+  background-color: #1B263B;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  transition: .5s linear;
+} */
+
+
+/* .mobile-menu-add-colour-bg {
   background-color: #1B263B;
 }
 .mobile-menu-remove-colour-bg {
@@ -140,7 +162,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-}
+} */
 
 
 /* ==== SECTION CONTENT STYLES ==== */

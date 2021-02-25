@@ -1,23 +1,16 @@
 $(document).ready(function() {
 
+// Adds background colour on scroll for desktop nav bar
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 470) {
-        if (window.matchMedia("(min-width: 900px)").matches) {
-          $("nav").removeClass("remove-colour-bg").addClass("add-colour-bg");
-        }
-      $("nav").removeClass("mobile-menu-remove-colour-bg").addClass("mobile-menu-add-colour-bg");
-      $("#menu ul").removeClass("mobile-menu-remove-nav-ul").addClass("mobile-menu-add-nav-ul");
+    if ($(document).scrollTop() > 500) {
+      $("nav").removeClass("no-menu-colour").addClass("add-menu-colour");
     }
     else {
-      if (window.matchMedia("(min-width: 900px)").matches) {
-        $("nav").removeClass("add-colour-bg").addClass("remove-colour-bg");
-      }
-      $("nav").removeClass("mobile-menu-add-colour-bg").addClass("mobile-menu-remove-colour-bg");
-      $("#menu ul").removeClass("mobile-menu-add-nav-ul").addClass("mobile-menu-remove-nav-ul");
+      $("nav").removeClass("add-menu-colour").addClass("no-menu-colour");
     }
   });
 
-
+// Provides smooth scrolldown to elements when clicking navbar link
   $('a[href$="-section"]').on('click', function(event) {
     event.preventDefault();
     $('html, body').animate( {
@@ -25,7 +18,7 @@ $(document).ready(function() {
     }, 1000, 'swing');
   });
 
-
+// Opens sources menu
   $(function(){
     $("#toggle-sources").on("click", function(){
       $("div.sources").slideToggle();
