@@ -4,8 +4,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(document).scrollTop() > 500) {
       $("nav").removeClass("no-menu-colour").addClass("add-menu-colour");
-    }
-    else {
+    } else {
       $("nav").removeClass("add-menu-colour").addClass("no-menu-colour");
     }
   });
