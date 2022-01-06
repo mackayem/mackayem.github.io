@@ -147,7 +147,7 @@ h4 {
   color: #DBD5D2;
 }
 .content, #credit-line, #sources {
-  width: 100vw;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   color: #B1A6AC;
 }
